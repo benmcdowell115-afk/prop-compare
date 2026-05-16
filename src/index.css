@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #05050a; color: white; font-family: system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+#root { min-height: 100vh; }
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(245,158,11,0.25); border-radius: 4px; }
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+@keyframes float {
+  0%,100% { transform: translateY(0px); }
+  50%      { transform: translateY(-6px); }
+}
+@keyframes glow-pulse {
+  0%,100% { opacity: 0.6; }
+  50%      { opacity: 1; }
+}
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.gold-text {
+  background: linear-gradient(125deg, #ffd700, #ffb800, #ffe566, #ffb800, #ffd700);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+.silver-text {
+  background: linear-gradient(125deg, #c0c0c0, #e8e8e8, #a8a8a8, #e8e8e8);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3.5s linear infinite;
+}
+.bronze-text {
+  background: linear-gradient(125deg, #cd7f32, #e8a060, #b86a20, #e8a060);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+[class*="max-w-"] { margin-left: auto; margin-right: auto; }
