@@ -313,6 +313,38 @@ const RAW_FIRMS: PropFirm[] = [
     ],
     lastVerified: '2026-05-15',
   },
+  {
+    id: 'lucid',
+    name: 'Lucid Trader',
+    shortName: 'Lucid',
+    website: 'https://lucidtrader.com',
+    color: '#818cf8',
+    accounts: [
+      { size: 25000,  price: 97,  resetPrice: 49  },
+      { size: 50000,  price: 147, resetPrice: 74  },
+      { size: 100000, price: 197, resetPrice: 99  },
+      { size: 200000, price: 347, resetPrice: 174 },
+    ],
+    profitSplit: 85,
+    drawdownType: 'eod',
+    maxDrawdown: 6,
+    dailyLoss: 3,
+    minTradingDays: 5,
+    newsTrading: true,
+    instruments: ['ES', 'NQ', 'CL', 'GC', 'RTY', 'YM'],
+    payoutSplit: '85% profit split',
+    payoutSpeed: 'Weekly',
+    liveAccount: false,
+    hasPricePromos: true,
+    promoNote: 'Regular discount codes — check site before paying full price',
+    highlights: [
+      'EOD drawdown — trader-friendly rules',
+      'News trading allowed',
+      'Weekly payouts',
+      'Competitive pricing across all account sizes',
+    ],
+    lastVerified: '2026-05-15',
+  },
 ]
 
 // ── Scoring algorithm ─────────────────────────────────────────────────────────
